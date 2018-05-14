@@ -11,6 +11,10 @@ function user() {
         type: 'string',
         required: true
       },
+      email: {
+        type: 'string',
+        required: true
+      },
       hash: {
         type: 'string',
         required: true
