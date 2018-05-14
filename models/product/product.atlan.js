@@ -23,20 +23,18 @@ function product() {
         required: true
       },
       multimedia: {
-        type: 'array',
-        required: true,
-        elements: {
-          type: 'object',
-          children: {
-            kind: {
-              type: 'string',
-              required: true
-            },
-            url: {
-              type: 'file',
-              required: true
-            }
-          }
+        type: 'string',
+        required: true
+      }
+    },
+    hooks: {
+      post: {
+        before(req, res, next) {
+          req.body.multimedia =
+            'http://calvin.tenatek.com/' +
+            (Math.floor(Math.random() * 10) + 1) +
+            '.jpg';
+          next();
         }
       }
     }
