@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jginsburgn/calvin-catalogue-back-end#readme",
   "dependencies": {
     "atlan": "^0.2.11",
-    "bcrypt": "^2.0.1"
+    "bcrypt": "^2.0.1",
+    "dotenv": "^5.0.1"
   }
 }

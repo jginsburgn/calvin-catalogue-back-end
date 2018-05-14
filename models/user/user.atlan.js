@@ -19,26 +19,6 @@ function user() {
         type: 'string' /* customer, seller, manager, owner */,
         required: true
       }
-    },
-    hooks: {
-      post: {
-        async before(req, res, next) {
-          if (req.body.password) {
-            req.body.hash = await hashPassword(req.body.password);
-            delete req.body.password;
-          }
-          next();
-        }
-      },
-      patch: {
-        async before(req, res, next) {
-          if (req.body.password) {
-            req.body.hash = await hashPassword(req.body.password);
-            delete req.body.password;
-          }
-          next();
-        }
-      }
     }
   };
 }

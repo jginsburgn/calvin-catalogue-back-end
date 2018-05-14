@@ -1,4 +1,4 @@
-function sales() {
+function sale() {
   return {
     schema: {
       seller: {
@@ -25,4 +25,4 @@ function sales() {
   };
 }
 
-module.exports = sales;
+module.exports = sale;

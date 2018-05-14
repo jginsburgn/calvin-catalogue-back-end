@@ -30,18 +30,21 @@ function store() {
       stock: {
         type: 'array',
         elements: {
-          product: {
-            type: 'object',
-            required: true,
-            children: {
-              stock: {
-                type: 'number',
-                required: true
-              },
-              product: {
-                type: 'ref',
-                required: true,
-                model: 'product'
+          type: 'object',
+          children: {
+            product: {
+              type: 'object',
+              required: true,
+              children: {
+                stock: {
+                  type: 'number',
+                  required: true
+                },
+                product: {
+                  type: 'ref',
+                  required: true,
+                  model: 'product'
+                }
               }
             }
           }
