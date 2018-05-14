@@ -1,0 +1,23 @@
+{
+  "name": "calvin-catalogue-back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jginsburgn/calvin-catalogue-back-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jginsburgn/calvin-catalogue-back-end/issues"
+  },
+  "homepage": "https://github.com/jginsburgn/calvin-catalogue-back-end#readme",
+  "dependencies": {
+    "atlan": "^0.2.11",
+    "bcrypt": "^2.0.1"
+  }
+}
